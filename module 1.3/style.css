@@ -54,7 +54,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* Specific Styles */
 .playlist {
     float: left;
     width: 50%;
