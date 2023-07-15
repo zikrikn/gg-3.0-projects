@@ -1,6 +1,7 @@
 const express = require('express');
 const connectToDatabase = require('./config/db');
 const playlistController = require('./controllers/playlistController');
+
 const app = express();
 const port = 3000;
 
@@ -12,12 +13,12 @@ connectToDatabase();
 // Playlist routes
 const controller = new playlistController();
 
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to our application." });
-});
-app.post('/playlist', controller.addSong);
-app.get('/playlist/:id', controller.getSong);
-app.get('/playlist', controller.getAllSongs);
+
+app.post('/playlist', controller.createPlaylist);
+app.post('/playlist/song', controller.addSong);
+app.get('/playlist/:playlistId/songs', controller.getAllSongs);
+app.get('/playlist/:playlistId/songs/sorted', controller.getSortedSongsByPlayCount);
+app.get('/playlist/:playlistId/songs/:songId', controller.getSong);
 
 // Start the server
 app.listen(port, () => {

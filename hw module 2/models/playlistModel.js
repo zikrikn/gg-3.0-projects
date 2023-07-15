@@ -4,10 +4,15 @@ const songSchema = new Schema({
   title: String,
   artists: [String],
   url: String,
+  playCount: { type: Number, default: 0 },
 });
 
-// The collections in MongoDB are automatically named based on the pluralized version of the model name. In your case, since you have a model named Song, MongoDB automatically pluralizes it to songs and creates a collection with that name.
+const playlistSchema = new Schema({
+  _id: { type: String, required: true },
+  name: String,
+  songs: [songSchema],
+});
 
-const Song = model('Song', songSchema);
+const Playlist = model('Playlist', playlistSchema);
 
-module.exports = Song;
+module.exports = Playlist;
