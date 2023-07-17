@@ -1,4 +1,4 @@
-const PlaylistService = require('../services/playlistService');
+const PlaylistService = require('../service/playlistService');
 
 const playlistService = new PlaylistService();
 

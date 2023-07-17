@@ -1,6 +1,6 @@
 const express = require('express');
 const connectToDatabase = require('./config/db');
-const playlistController = require('./controllers/playlistController');
+const playlistController = require('./controller/playlistController');
 
 const app = express();
 const port = 3000;

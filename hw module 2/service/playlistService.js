@@ -1,4 +1,4 @@
-const Playlist = require('../models/playlistModel');
+const Playlist = require('../model/playlistModel');
 
 class PlaylistService {
   async createPlaylist(playlistId, name) {
