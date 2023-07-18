@@ -6,7 +6,7 @@ songs_field = [
     {
         title: "Shape of You",
         artists: ["Ed Sheeran"],
-        album: "รท (Divide)"
+        album: "÷ (Divide)"
     },
     {
         title: "Someone Like You",
