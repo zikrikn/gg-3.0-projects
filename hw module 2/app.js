@@ -13,7 +13,6 @@ connectToDatabase();
 // Playlist routes
 const controller = new playlistController();
 
-
 app.post('/playlist', controller.createPlaylist);
 app.post('/playlist/song', controller.addSong);
 app.get('/playlist/:playlistId/songs', controller.getAllSongs);
