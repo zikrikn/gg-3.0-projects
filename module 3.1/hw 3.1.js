@@ -1,4 +1,4 @@
-// mongodb syntax - untuk homowork 3.1
+// mongodb syntax - untuk homework 3.1
 
 use music_database
 
