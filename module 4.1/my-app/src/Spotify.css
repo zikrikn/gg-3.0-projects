@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1db954;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #1db954;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    flex: 1;
+}
+
+input[type="submit"] {
+    background-color: #1db954;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.playlist {
+    float: left;
+    width: 50%;
+}
+
+.most-played-songs {
+    float: right;
+    width: 50%;
+}
+
+.add-song {
+    clear: both;
+    margin-top: 20px;
+}
